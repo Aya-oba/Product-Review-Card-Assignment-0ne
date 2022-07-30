@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    background-color: hsl(30, 30%,92%);
+    height: 562px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+div{
+    display: block;
+    margin: auto;
+    position: relative;
+}
+.main{
+    height: 450px;
+    width: 600px;
+    background-color: whitesmoke;
+    display: flex;
+}
+.inner-div-left{
+    flex: 0.5;
+    display: flex;
+    background-image: url(./product-preveiw-card-component-main/images/image-product-desktop,jpg/);
+    background-size: 400px 200px;
+    height: 450px;
+    width: 300px;
+}
+.inner-div-right{
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+h1{
+    padding-top: 20px;
+    padding-left: 10px;
+    color: hsl(212, 21%, 14%);
+}
+h3{
+    padding-top: 20px;
+    padding-left: 10px;
+    color: hsl(158, 36%, 37%);
+}
+h3, h4{
+    display: inline-block;
+    padding-bottom: 20px;
+}
+h4{
+    padding-top: 10px;
+    padding-left: 20px;
+    color: hsl(228, 12%, 48%);
+}
+p{
+    padding-top: 20px;
+    padding-left: 10px;
+    color: hsl(228, 12%, 14%);
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    background-color: white;
+    border-radius: 4px;
+    font-size: 12px;
+    padding: 5px 10px;
+    margin-top: 2px;
+    float: none;
+}
+button{
+    background-color: hsl(158, 36%, 37%);
+    align-items: flex-start;
+    color: white;
+    outline: none;
+    font-size: 21px;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 7px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+
+}
+.attribution{
+    padding-top: 50px;
+}
+@media only screen and (max-width: 800px) {
+    /*For desktop: */
+    .main{
+        width: 80%;
+        padding: 0;
+    }
+}
+@media only screen and (max-width: 500px){
+    /*For mobile phones: */
+    .main{
+        width: 100%;
+    }
+}
